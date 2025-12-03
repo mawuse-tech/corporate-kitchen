@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "John Mensah",
+        "client_id": 1,
+        "email": "john.mensah@acme.com",
+        "phone": "+233501234567",
+        "password": "pass123"
+    },
+    {
+        "id": 2,
+        "name": "Abigail Tetteh",
+        "client_id": 1,
+        "email": "abigail.tetteh@acme.com",
+        "phone": "+233548112233",
+        "password": "pass123"
+    },
+    {
+        "id": 3,
+        "name": "Kwame Owusu",
+        "client_id": 2,
+        "email": "kwame.owusu@betalogs.com",
+        "phone": "+233559998877",
+        "password": "pass123"
+    },
+    {
+        "id": 4,
+        "name": "Sarah Boateng",
+        "client_id": 2,
+        "email": "sarah.boateng@betalogs.com",
+        "phone": "+233501223344",
+        "password": "pass123"
+    },
+    {
+        "id": 5,
+        "name": "Michael Asante",
+        "client_id": 3,
+        "email": "michael.asante@cresttech.com",
+        "phone": "+233242556677",
+        "password": "pass123"
+    },
+    {
+        "id": 6,
+        "name": "Evelyn Yeboah",
+        "client_id": 3,
+        "email": "evelyn.yeboah@cresttech.com",
+        "phone": "+233209987654",
+        "password": "pass123"
+    },
+    {
+        "id": 7,
+        "name": "Roland Adjei",
+        "client_id": 4,
+        "email": "roland.adjei@deltamfg.com",
+        "phone": "+233548998800",
+        "password": "pass123"
+    },
+    {
+        "id": 8,
+        "name": "Priscilla Naa",
+        "client_id": 4,
+        "email": "priscilla.naa@deltamfg.com",
+        "phone": "+233554221100",
+        "password": "pass123"
+    }
+]

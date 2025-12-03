@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Acme Industries",
+      "code": "ACM001",
+      "subsidy_type": "full",
+      "order_start_time": "08:00",
+      "order_end_time": "17:00",
+      "subsidy_amount_type": null,
+      "subsidy_amount_unit": null,
+      "subsidy_amount_value": null,
+      "employee_cover": null
+    },
+    {
+      "id": 2,
+      "name": "Beta Logistics",
+      "code": "BLG102",
+      "subsidy_type": "part",
+      "order_start_time": "09:30",
+      "order_end_time": "18:00",
+      "subsidy_amount_type": "percentage",
+      "subsidy_amount_unit": "%",
+      "subsidy_amount_value": 40,
+      "employee_cover": "cash"
+    },
+    {
+      "id": 3,
+      "name": "Crest Technologies",
+      "code": "CST550",
+      "subsidy_type": "part",
+      "order_start_time": "07:45",
+      "order_end_time": "16:00",
+      "subsidy_amount_type": "amount",
+      "subsidy_amount_unit": "GHS",
+      "subsidy_amount_value": 15.5,
+      "employee_cover": "payroll"
+    },
+    {
+      "id": 4,
+      "name": "Delta Manufacturing",
+      "code": "DLT220",
+      "subsidy_type": "employee",
+      "order_start_time": "06:30",
+      "order_end_time": "15:30",
+      "subsidy_amount_type": null,
+      "subsidy_amount_unit": null,
+      "subsidy_amount_value": null,
+      "employee_cover": "payroll"
+    }
+]
+
