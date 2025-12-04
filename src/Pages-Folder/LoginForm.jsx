@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { FaUserShield, FaEnvelope, FaLock, FaSignInAlt, FaSpinner } from "react-icons/fa";
+import {FaSpinner } from "react-icons/fa";
 import ShowHidePassword from "../SharableComponents-Folder/ShowHidePassword";
 import Button from "../SharableComponents-Folder/Button";
 
