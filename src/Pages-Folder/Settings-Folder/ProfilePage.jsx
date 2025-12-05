@@ -68,7 +68,6 @@ const ProfilePage = () => {
 
             // Update Redux store
             dispatch(setClient(dataToSave));
-            dispatch(loginUser());
 
             console.log("Updated client saved:", dataToSave);
 
