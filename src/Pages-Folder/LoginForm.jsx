@@ -42,7 +42,8 @@ const LoginForm = () => {
   }, [user, navigate, error]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#f7eaf1]">
+   <div className=" flex flex-col items-center bg-[#f7eaf1]">
+     <div className="min-h-screen">
 
       <div className="flex-col justify-start">
         <p className="text-[1rem] text-[#4f1e72] mt-8 mb-3">
@@ -53,7 +54,7 @@ const LoginForm = () => {
       {/* Login Form */}
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-sm bg-white p-8 border-4 border-blue-200 min-h-screen"
+        className="w-full bg-white p-8 border-4 border-blue-200 min-h-screen"
       >
 
         <p className="text-3xl pt-20 mb-4">Log In</p>
@@ -69,7 +70,7 @@ const LoginForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full pl-2 pr-4 py-3 border border-gray-300 transition duration-150 ease-in-out placeholder-gray-500 text-gray-900"
+                className="w-80 pl-2 pr-4 py-3 border border-gray-300 transition duration-150 ease-in-out placeholder-gray-500 text-gray-900"
               />
             </div>
           </div>
@@ -100,6 +101,7 @@ const LoginForm = () => {
 
       </form>
     </div>
+   </div>
 
   );
 };
