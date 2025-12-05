@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import clients from "../../../Data-Folder/clients.json";
 
+//auth state of the application. when login, reducer updates the state
 const initialState = {
   user: null,
   client: null,

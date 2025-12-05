@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { FaUserShield, FaEnvelope, FaLock, FaSignInAlt, FaSpinner } from "react-icons/fa";
+import { FaSpinner } from "react-icons/fa";
 import ShowHidePassword from "../SharableComponents-Folder/ShowHidePassword";
 import Button from "../SharableComponents-Folder/Button";
 
@@ -28,9 +28,10 @@ const LoginForm = () => {
     dispatch(loginUser(email, password));
   };
 
+  //useEffect is a React hook that lets you run side effects in your component
   useEffect(() => {
     if (user && !hasNavigated.current) {
-      hasNavigated.current = true; 
+      hasNavigated.current = true;
       toast.success("Login successful!");
       navigate("/settings");
     }
@@ -55,7 +56,7 @@ const LoginForm = () => {
         className="w-full max-w-sm bg-white p-8 border-4 border-blue-200 min-h-screen"
       >
 
-        <p className="text-3xl pt-20 mb-4">Log In</p> 
+        <p className="text-3xl pt-20 mb-4">Log In</p>
         <div className="space-y-4">
           <div>
             <div>
@@ -90,9 +91,9 @@ const LoginForm = () => {
 
         <Button className=""
           type="submit"
-          loading={loading}           
-          loadingText="Logging in..."          
-          loadingIcon={FaSpinner}     
+          loading={loading}
+          loadingText="Logging in..."
+          loadingIcon={FaSpinner}
         >
           Login
         </Button>

@@ -120,4 +120,4 @@ http://localhost:5173
 
 
 ##Project Hosted Link
-https://mawuse.netlify.app/
+https://corate.netlify.app/

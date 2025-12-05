@@ -10,7 +10,7 @@ import Button from '../../SharableComponents-Folder/Button';
 
 const ProfilePage = () => {
     const { user, client } = useSelector((state) => state.auth);
-    console.log('----------------', user)
+    // console.log('----------------', user)
 
     const [organizationName, setOrganizationName] = useState(client.name);
     const [subsidy, setSubsidy] = useState(
@@ -27,6 +27,7 @@ const ProfilePage = () => {
     });
 
     const [secondCutoffTime, setSecondCutoffTime] = useState(() => {
+        //distructuring an array [hour, minute]
         const [hour, minute] = client.order_end_time.split(":").map(Number);
         return { hour, minute };
     });
@@ -50,6 +51,7 @@ const ProfilePage = () => {
             id: client.id,
             name: organizationName,
             code: client.code,
+            //changing back to the backend format
             subsidy_type: subsidy === "fully_subsidised" ? "full"
                 : subsidy === "partly_subsidised" ? "part"
                     : "none",
@@ -217,6 +219,7 @@ const ProfilePage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
                     <div className="font-medium text-gray-700 md:col-span-1 text-[13px]">Preferred cut-off time for orders:</div>
+
                     <div className="md:col-span-2 flex space-x-6">
                         <TimeInput value={cutoffTime} onChange={setCutoffTime} />
                         <TimeInput value={secondCutoffTime} onChange={setSecondCutoffTime} />

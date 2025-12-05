@@ -2,8 +2,8 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
-import { getItem } from "./Api/storage";
-import { loginSuccess } from "./Redux-Store/Features/Auth-Folder/authSlice";
+import { getItem, saveItem } from "./Api/storage";
+import { loginSuccess, setClient } from "./Redux-Store/Features/Auth-Folder/authSlice";
 
 import LoginForm from "./Pages-Folder/LoginForm";
 import ProfilePage from "./Pages-Folder/Settings-Folder/ProfilePage";
@@ -57,8 +57,17 @@ const App = () => {
   useEffect(() => {
     const loadSession = async () => {
       const session = await getItem("session");
-      if (session) dispatch(loginSuccess(session));
+      const savedClient = await getItem("client");
+
+      if (session) {
+        dispatch(loginSuccess(session));
+      }
+
+      if (savedClient) {
+        dispatch(setClient(savedClient));
+      }
     };
+
     loadSession();
   }, [dispatch]);
 

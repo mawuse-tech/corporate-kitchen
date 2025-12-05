@@ -15,6 +15,7 @@ const DashboardLayout = () => {
 
   const getInitials = (name) => {
     if (!name) return '';
+    //eg "John Michael Doe".split(' ') // ["John", "Michael", "Doe"]
     const parts = name.split(' ');
     if (parts.length >= 2) {
       return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
@@ -28,15 +29,14 @@ const DashboardLayout = () => {
       {/* Sidebar */}
       <div className="w-50 bg-[#f7eaf1] flex flex-col items-center py-6">
         <NavLink
-    to="/settings"
-    className={({ isActive }) =>
-      `mt-40 w-12 h-12 flex items-center justify-center mb-6 text-gray-800 text-3xl rounded transition-all duration-300 ${
-        isActive ? "bg-blue-200" : ""
-      }`
-    }
-  >
-    <FiSettings />
-  </NavLink>
+          to="/settings"
+          className={({ isActive }) =>
+            `mt-40 w-12 h-12 flex items-center justify-center mb-6 text-gray-800 text-3xl rounded transition-all duration-300 ${isActive ? "bg-blue-200" : ""
+            }`
+          }
+        >
+          <FiSettings />
+        </NavLink>
       </div>
 
       {/* Main Content */}
