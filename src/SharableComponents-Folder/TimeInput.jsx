@@ -20,7 +20,7 @@ const TimeInput = ({ value, onChange }) => {
   };
 
   return (
-    <div className="relative w-28 border rounded-md flex items-center justify-center">
+    <div className="relative w-28 border flex items-center justify-center">
 
       <input
         type="text"
